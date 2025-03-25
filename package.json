@@ -1,10 +1,10 @@
 {
   "name": "mi-proyecto-node",
   "version": "1.0.0",
-  "description": "Proyecto básico en Node.js con Express",
-  "main": "src/index.js",
+  "description": "Proyecto node",
+  "main": "csc/data.csc",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "public_html/index.php"
   },
   "dependencies": {
     "express": "^4.18.2"
