@@ -1,0 +1,217 @@
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eff5f7;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 80vh;
+    background: white;
+    border-radius: 20px;
+    color: black;
+}
+
+.imagen {
+    flex: 1;
+    background: url('https://i.pinimg.com/736x/75/de/07/75de0749aa17d31912274fc15ba4545e.jpg') no-repeat center center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+}
+
+.formulario {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 100%;
+    margin-left: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los labels a la izquierda */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left; /* Asegura la alineación a la izquierda */
+    width: 100%;
+}
+
+input, select, textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #e5e8ee;
+    color: black;
+    font-size: 14px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* Estilos para los checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    gap: 10px; /* Espacio entre el checkbox y el label */
+    width: 100%;
+}
+
+.checkbox-container label {
+    margin: 0; /* Elimina el margen superior */
+    width: auto; /* Permite que el label se ajuste al contenido */
+}
+
+.checkbox-container input {
+    width: auto; /* Permite que el checkbox mantenga su tamaño natural */
+}
+
+button {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #121212;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f4c229;
+}
+
+.mensaje-exito {
+    text-align: center;
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+    display: none;
+}
+
+.autocomplete-sugerencia {
+    background: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.autocomplete-sugerencia:hover {
+    background: #f4c2298a;
+}
+
+@media (max-width: 768px) {
+    
+    input, textarea {
+    width: 95%;
+    max-width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    .formulario {
+    margin-left: 0px;
+}
+    .container {
+        height: 100vh;
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
+    .imagen {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.555);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: rgb(24, 24, 24);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    min-width: 300px;
+    max-width: 350px;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos del catálogo de registros */
+#catalogoRegistros {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+}
+
+.registro {
+    border-bottom: 1px solid #555;
+    padding: 10px;
+}
+
+/* Mostrar el catálogo cuando haya registros */
+#catalogoRegistros:not(.hidden) {
+    display: block;
+}
