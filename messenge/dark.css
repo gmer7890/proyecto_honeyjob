@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 1023px) {
+    body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 0px;
+}
+    }
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #18191a;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: #ffffff;
+}
+
+a.light-mode {
+    color: black;
+}
+
+a.dark-mode {
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+button.light-mode {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+}
+
+button.dark-mode {
+    background-color: black;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.darklight.light-mode {
+    color: black;
+    fill: black;
+}
+
+.darklight.dark-mode {
+    color: #ffffff;
+    fill: white;
+}
+
+.colors.light-mode {
+    background-color: #f0f0f0d3;
+    color: black;
+}
+
+.colors.dark-mode {
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.tows.light-mode {
+    background-color: #ffffff;
+    color: black;
+    fill: rgb(0, 0, 0);
+}
+
+.tows.dark-mode {
+    background-color: black;
+    color: #ffffff;
+    fill: white;
+}
+
+.towsi.light-mode {
+    background-color: #1986cf;
+}
+
+.towsi.dark-mode {
+    background-color: #252525;
+}
+
+.towsis.light-mode {
+    background-color: black;
+}
+
+.towsis.dark-mode {
+    background-color: white;
+}
+
+.towse.light-mode {
+    stroke: rgb(0, 0, 0);
+}
+
+.towse.dark-mode {
+    stroke: white;
+}
+
+.sis.light-mode {
+    background: linear-gradient( to bottom, rgb(0 0 0 / 0%) 0%, rgb(255 255 255 / 98%) 88% );
+}
+
+.sis.dark-mode {
+    background: linear-gradient( to bottom, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 98%) 88% );
+}
+
+.sos.light-mode {
+    background: linear-gradient( to top, rgb(0 0 0 / 0%) 0%, rgb(255 255 255 / 98%) 88% );
+}
+
+.sos.dark-mode {
+    background: linear-gradient( to top, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 98%) 88% );
+}
+
+.borde.light-mode {
+    border: solid 4px white;
+}
+
+.borde.dark-mode {
+    border: solid 4px black;
+}
